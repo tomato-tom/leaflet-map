@@ -12,7 +12,8 @@
 
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script>
-    var map = L.map('map').setView([51.505, -0.09], 13);  // 初期の地図位置
+    //var map = L.map('map').setView([51.505, -0.09], 13);  // 初期の地図位置 ロンドン
+    var map = L.map('map').setView([35.682839, 139.759455], 13);  // 東京
 
     // OpenStreetMapタイルレイヤーを追加
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -21,7 +22,7 @@
 
     // マーカーを追加
     L.marker([51.505, -0.09]).addTo(map)
-      .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+      .bindPopup('ようこそ東京！<br> Welcome to Tokyo!')
       .openPopup();
   </script>
 </body>
